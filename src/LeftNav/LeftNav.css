@@ -1,0 +1,132 @@
+.Avatar{
+	width:70%;
+	margin:40px;
+	border-radius: 50%;
+}
+
+ul{
+	list-style: none;	
+}
+
+li{
+	color: white;
+	text-decoration: none;	
+}
+
+.spacer{
+	flex:1;
+}
+
+.TextNav li{
+	cursor: pointer;
+	border-bottom: 1px solid white;
+}
+
+.TextNav li:hover {
+	border-bottom: 1px solid #916341;
+	color: #916341;
+	font-size: 1.2rem;
+
+}
+
+.ToggleItem {
+	opacity: 0;
+	transform: translateY(-50%);
+	transition: transform 0.3s ease-out;
+}
+.NavButtonToggle:hover .ToggleItem{
+	opacity: 1;
+	
+	transform: translateY(0);
+	transition: transform 0.3s ease-out;
+}
+.NavButtonToggle:hover img{
+	display: none;
+}
+.NavButtonToggle>li{
+	display: flex;
+	flex-direction: row;
+}
+.NavButtonToggle img{
+
+	box-sizing: border-box;
+	width: 15px;
+	height: 15px;
+	margin-top: 8px
+}
+
+.Contact{
+	margin: 20px;
+}
+.Contact ul{
+	font-size: 0.7rem;
+	padding: 0;
+	margin:0
+}
+
+.Contact div{
+	height: 50px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.LeftNav{
+	height: 100%;
+	width: 250px;
+	background: #4c3126;
+	position: fixed;
+	top: 0; 
+	left: 0;
+	z-index: 400;
+
+	display: flex;
+	flex-direction: column;	
+
+	border-right: 2px solid white;
+
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.7);
+}
+.ToggleLeftNav{
+	background: #4c3126;
+	position: fixed;
+	top: 0;
+	left:240px;
+	z-index: 200;
+
+	border: 2px solid white;
+	border-top-right-radius: 50%;
+  	border-bottom-right-radius: 50%;
+
+  	outline: none;	
+}
+
+@media  screen and (max-width: 1300px){/*1000px////1500px*/
+	.ToggleLeftNav{
+		transform: translateX(-280px);
+		transition: transform 0.3s ease-out;
+
+	}
+	.ToggleLeftNav.Open{
+		transform: translateX(0);
+	}
+
+	.LeftNav{
+		transform: translateX(-100%);
+		transition: transform 0.3s ease-out;
+	}
+	.LeftNav.Open{
+		transform: translateX(0);
+	}
+}
+@media  screen and (min-width: 1299px){/*999px////1499px*/
+	.ToggleLeftNav{
+		transition: transform 0.3s ease-out;
+	}	
+	.LeftNav{
+		transform: translateX(0);
+		transition: transform 0.3s ease-out;
+	}
+}
+

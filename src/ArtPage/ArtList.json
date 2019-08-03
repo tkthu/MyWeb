@@ -1,0 +1,42 @@
+{
+	"Info":{
+		"quantity":5
+	},
+	"database" : [
+		{
+			"id":0,
+			"fileName":"NeroAndKyrie.png",
+			"title":"Nero And Kyrie",
+			"published": "October 11, 2017",
+			"description":"All characters are from Devil may cry series (c) Capcom"
+		},
+		{
+			"id":1,
+			"fileName":"Dante.jpg",
+			"title":"Dante",
+			"published": "September 8, 2018",
+			"description":"Character is from Devil may cry series (c) Capcom"
+		},
+		{
+			"id":2,
+			"fileName":"MichealMyers.png",
+			"title":"Micheal Myers",
+			"published": "December 27, 2018",
+			"description":"If you're wonder what that crimson substance is.\nIt's paint.\nFor visual effect.\n\n\nCharacter is from Halloween (franchise)"
+		},
+		{
+			"id":3,
+			"fileName":"Alaster.png",
+			"title":"Alaster",
+			"published": "May 25, 2019",
+			"description":"Character is from Hazbin hotel (c) Vivziepop"
+		},
+		{
+			"id":4,
+			"fileName":"Snakes.jpg",
+			"title":"Snakes",
+			"published": "July 17, 2019",
+			"description":"All characters are from Metal Gear Solid series (c) Kojima and Konami"
+		}
+	]
+}
