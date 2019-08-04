@@ -1,12 +1,14 @@
-import React from 'react'
-import NavButton from './NavButton.js'
+import React from 'react';
+import NavButton from './NavButton.js';
+
+import ImgComp from "../images/ImgComp.js";
 
 const NavButtonToggle = props => (
 	<div className="NavButtonToggle">
 		<li >
 			{props.text}
 			<div className="spacer" />
-			<img src="/images/arrowIcon.png" />
+			<img src={ImgComp["arrowIcon"]} />
 		</li>
 		<ul className="ToggleItem">				
 			<NavButton text="Drawing" toPage="art" onClickHandler={props.onClickHandler} />

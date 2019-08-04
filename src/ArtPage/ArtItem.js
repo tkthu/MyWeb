@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+
+import ImgComp from "../images/art/ImgArtComp.js";
 
 const ArtItem = props => {
-	let srcImage = '/images/art/' + props.ArtDetail.fileName
 	return(	
 		<div className="ArtItem" onClick={()=>{
 				const target ={toPage:props.toPage,showWork:props.ArtDetail.id};
@@ -9,7 +10,7 @@ const ArtItem = props => {
 				props.onClickHandler(e)						
 			}
 		}>
-			<img src={srcImage} />
+			<img src={ImgComp[props.ArtDetail.fileName]} />
 			<div className="Overlay" />
 			<div className="OverlayName">{props.ArtDetail.title}</div>
 			

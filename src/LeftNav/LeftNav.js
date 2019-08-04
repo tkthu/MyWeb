@@ -4,6 +4,8 @@ import NavButton from './NavButton.js'
 import NavButtonToggle from './NavButtonToggle.js'
 import ToggleLeftNav from './ToggleLeftNav.js'
 
+import ImgComp from "../images/ImgComp.js";
+
 import './LeftNav.css';
 
 class LeftNav extends React.Component {
@@ -31,7 +33,7 @@ class LeftNav extends React.Component {
 				<ToggleLeftNav className={ToggleClassNames} onClickHandler={this.changeShowHandler}  />			
 				
 				<nav className={NavClassNames}>
-					<img className="Avatar" src ={"/images/myAvatar.jpg"} />
+					<img className="Avatar" src ={ImgComp["myAvatar"]} />
 
 					<ul className="TextNav">
 						<NavButton text="HOME" toPage="home" onClickHandler={this.props.onClickHandler} />
@@ -49,9 +51,9 @@ class LeftNav extends React.Component {
 						</ul>
 					    <hr style={{ backgroundColor: "white",height: 1 }} />
 					    <div>
-					    	<ContactIcon imgSrc="/images/facebookIcon.png" linkTo="https://www.facebook.com/thai.k.thu"/>
-					    	<ContactIcon imgSrc="/images/deviantartIcon.png" linkTo="https://www.deviantart.com/thu2000"/>
-						    <ContactIcon imgSrc="/images/linkedinIcon.png" linkTo="https://www.linkedin.com/in/thu-thai-kim-b458b316a/"/>			    
+					    	<ContactIcon imgSrc={"facebookIcon"} linkTo="https://www.facebook.com/thai.k.thu"/>
+					    	<ContactIcon imgSrc={"deviantartIcon"} linkTo="https://www.deviantart.com/thu2000"/>
+						    <ContactIcon imgSrc={"linkedinIcon"} linkTo="https://www.linkedin.com/in/thu-thai-kim-b458b316a/"/>			    
 					    </div>
 				    </div>			    
 				</nav>

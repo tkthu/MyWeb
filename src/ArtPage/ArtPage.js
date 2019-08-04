@@ -1,13 +1,15 @@
-import React from 'react'
-import ArtItem from './ArtItem.js'
-import ArtList from './ArtList.json'
+import React from 'react';
+import ArtItem from './ArtItem.js';
+import ArtList from './ArtList.json';
+
+import ImgComp from "../images/ImgComp.js";
 
 import './ArtPage.css';
 
 const ArtPage = props => (	
 	<div className="PanelContent ArtPage">
 		<h1>MY PROUDEST DRAWING</h1>
-		<img className="LineBreak" src="/images/fancyHorizontalLine.png" />	
+		<img className="LineBreak" src={ImgComp["fancyHorLine"]} />	
 		<div className="row"> 
 			<div className="column">
 			{

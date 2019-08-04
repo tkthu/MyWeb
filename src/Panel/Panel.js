@@ -1,10 +1,10 @@
-import React from 'react'
-import HomePage from '../HomePage/HomePage.js'
-import WorkPage from '../WorkPage/WorkPage.js'
-import DetailWorkPage from '../DetailWorkPage/DetailWorkPage.js'
-import ArtPage from '../ArtPage/ArtPage.js'
-import DetailArtPage from '../DetailArtPage/DetailArtPage.js'
-import AboutMePage from '../AboutMePage/AboutMePage.js'
+import React from 'react';
+import HomePage from '../HomePage/HomePage.js';
+import WorkPage from '../WorkPage/WorkPage.js';
+import DetailWorkPage from '../DetailWorkPage/DetailWorkPage.js';
+import ArtPage from '../ArtPage/ArtPage.js';
+import DetailArtPage from '../DetailArtPage/DetailArtPage.js';
+import AboutMePage from '../AboutMePage/AboutMePage.js';
 
 import './Panel.css';
 
