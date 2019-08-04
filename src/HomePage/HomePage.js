@@ -1,15 +1,17 @@
-import React from 'react'
-import WorkIcon from './WorkIcon.js'
+import React from 'react';
+import WorkIcon from './WorkIcon.js';
+
+import ImgComp from "../images/ImgComp.js";
 
 import './HomePage.css';
 
 const HomePage = props => (	
 	<div className="PanelContent HomePage">
 		<h1>MY PROUDEST WORK</h1>
-		<img className="fancyHorLine" src="/images/fancyHorLine.jpg" />
+		<img className="fancyHorLine" src={ImgComp["fancyHorLine"]} />
 		<div className="WorkItem">
-	    	<WorkIcon imgSrc="/images/artIcon.png" toPage="art" onClickHandler={props.onClickHandler} />
-	    	<WorkIcon imgSrc="/images/codingIcon.png" toPage="code" onClickHandler={props.onClickHandler} />    
+	    	<WorkIcon imgSrc="artIcon" toPage="art" onClickHandler={props.onClickHandler} />
+	    	<WorkIcon imgSrc="codingIcon" toPage="code" onClickHandler={props.onClickHandler} />    
 	    </div>
 	</div>
 );

@@ -1,11 +1,13 @@
-import React from 'react'
-import ArtList from '../ArtPage/ArtList.json'
-import ArtItem from '../ArtPage/ArtItem.js'
+import React from 'react';
+import ArtList from '../ArtPage/ArtList.json';
+import ArtItem from '../ArtPage/ArtItem.js';
 
-import WorkList from '../WorkPage/WorkList.json'
-import WorkItem from '../WorkPage/WorkItem.js'
+import WorkList from '../WorkPage/WorkList.json';
+import WorkItem from '../WorkPage/WorkItem.js';
 
-import ToggleSlider from "./ToggleSlider.js"
+import ToggleSlider from "./ToggleSlider.js";
+
+import ImgComp from "../images/ImgComp.js";
 
 import "./Slider.css"
 
@@ -80,7 +82,7 @@ class Slider extends React.Component {
 			<div>
 				<ToggleSlider className={ToggleClassNames} onClickHandler={this.changeShowHandler}  />
 				<div className={SliderClassNames}>	
-					<img id="LeftArrow" className="Arrow" src="/images/arrowIcon.png" onClick={()=>{
+					<img id="LeftArrow" className="Arrow" src={ImgComp["arrowIcon"]} onClick={()=>{
 							const target ={number:-1};
 							const e = {target};
 							this.changeCurShowHandler(e)						
@@ -89,7 +91,7 @@ class Slider extends React.Component {
 
 					{currentShowsPicture}
 							
-					<img id="RightArrow" className="Arrow" src="/images/arrowIcon.png" onClick={()=>{
+					<img id="RightArrow" className="Arrow" src={ImgComp["arrowIcon"]} onClick={()=>{
 							const target ={number:1};
 							const e = {target};
 							this.changeCurShowHandler(e)						

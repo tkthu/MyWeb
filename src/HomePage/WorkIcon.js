@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import ImgComp from "../images/ImgComp.js";
 
 const WorkIcon = props => (	
 	<button className="WorkIcon"
@@ -9,7 +11,7 @@ const WorkIcon = props => (
 			props.onClickHandler(e)						
 		}
 	}>
-		<img src={props.imgSrc} />
+		<img src={ImgComp[props.imgSrc]} />
 	</button>	
 );
 

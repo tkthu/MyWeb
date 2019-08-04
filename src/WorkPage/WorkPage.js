@@ -1,6 +1,8 @@
-import React from 'react'
-import WorkItem from './WorkItem.js'
-import WorkList from './WorkList.json'
+import React from 'react';
+import WorkItem from './WorkItem.js';
+import WorkList from './WorkList.json';
+
+import ImgComp from "../images/ImgComp.js";
 
 import './WorkPage.css';
 
@@ -8,7 +10,7 @@ import './WorkPage.css';
 const WorkPage = props => (	
 	<div className="PanelContent WorkPage">
 		<h1>MY PROUDEST PROJECT</h1>
-		<img className="LineBreak" src="/images/fancyHorizontalLine.png" />	
+		<img className="LineBreak" src={ImgComp["fancyHorLine"]} />	
 		<div className="row"> 
 			<div className="column">
 			{

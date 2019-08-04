@@ -1,7 +1,9 @@
-import React from 'react'
-import ReactTooltip from 'react-tooltip'
+import React from 'react';
+import ReactTooltip from 'react-tooltip';
 
-import Level from '../Level/Level.js'
+import Level from '../Level/Level.js';
+
+import ImgComp from "../images/ImgComp.js";
 
 import './AboutMePage.css';
 
@@ -9,7 +11,7 @@ class AboutMePage extends React.Component {
 	render(){
 		return(
 			<div className="PanelContent AboutMePage">
-				<img className="background" src="/images/background.png"/>
+				<img className="background" src={ImgComp["background"]}/>
 
 				<Level lvlID="lvl1" year="2015 - 2018"/>
 				<ReactTooltip className="ReactTooltip" id='lvl1RT' aria-haspopup='true' role='example' place="bottom">
@@ -18,7 +20,7 @@ class AboutMePage extends React.Component {
 					<hr />
 					<p>the National High School <br /> Graduation Examination</p>
 				</ReactTooltip>
-				<img className="flag" id="flag1" src="/images/flag.png"/>
+				<img className="flag" id="flag1" src={ImgComp["flag"]}/>
 				
 				<Level lvlID="lvl2" year="2018 - 2019"/>
 				<ReactTooltip className="ReactTooltip" id='lvl2RT' aria-haspopup='true' role='example' place="bottom">
@@ -36,7 +38,7 @@ class AboutMePage extends React.Component {
 					<hr />
 					<p>A Single Page Application Website,<br /> a cute little companion called "Screenmate"</p>
 				</ReactTooltip>
-				<img className="flag" id="flag2" src="/images/flag.png"/>
+				<img className="flag" id="flag2" src={ImgComp["flag"]}/>
 
 				<Level lvlID="lvl3" year="2019"/>
 				<ReactTooltip className="ReactTooltip" id='lvl3RT' aria-haspopup='true' role='example' place="bottom">
@@ -46,7 +48,7 @@ class AboutMePage extends React.Component {
 					<p>sophomore</p>
 				</ReactTooltip>
 
-				<img className="me" src="/images/me.png" data-tip data-for="meRT" />
+				<img className="me" src={ImgComp["me"]} data-tip data-for="meRT" />
 				<ReactTooltip className="ReactTooltip" id='meRT' aria-haspopup='true' role='example'>
 					<p>It's-a me!</p>
 				</ReactTooltip>

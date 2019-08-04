@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+
+import ImgWorkComp from "../images/work/ImgWorkComp.js";
 
 const WorkItem = props => {
-	let srcImage = '/images/work/thumbnail/' + props.WorkDetail.thumbnail
 	return(	
 		<div className="WorkItem" onClick={()=>{
 				const target ={toPage:props.toPage,showWork:props.WorkDetail.id};
@@ -9,7 +10,7 @@ const WorkItem = props => {
 				props.onClickHandler(e)						
 			}
 		}>
-			<img src={srcImage} />
+			<img src={ImgWorkComp[props.WorkDetail.thumbnail]} />
 			<div className="Overlay" />
 			<div className="OverlayName">{props.WorkDetail.title}</div>
 			
