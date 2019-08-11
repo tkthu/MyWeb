@@ -2,7 +2,7 @@
   "name": "my-spa-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tkthu.github.io/MyWeb/",
+  "homepage": "https://tkthu.github.io",
   "devDependencies": {},
   "dependencies": {
     "gh-pages": "^2.0.1",
