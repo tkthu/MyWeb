@@ -13,7 +13,7 @@ const DetailArtPage = props => {
 	return(	
 		<div className="PanelContent DetailArtPage">
 			<img className="Image" src={ImgArtComp[ArtDetail[0].fileName]} />
-			<img className="LineBreak" src={ImgComp["fancyHorLine2"]} />	
+			<img className="LineBreak" src={ImgComp["fancyHorLine"]} />	
 			<InfoSection ArtDetail={ArtDetail[0]}/>
 		</div>
 	);

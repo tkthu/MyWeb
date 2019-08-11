@@ -21,7 +21,7 @@ const DetailWorkPage = props => {
 			  src={ImgWorkComp[WorkDetail[0].fileName]}
 			/>
 
-			<img className="LineBreak" src={ImgComp["fancyHorLine2"]} />	
+			<img className="LineBreak" src={ImgComp["fancyHorLine"]} />	
 			<InfoSection WorkDetail={WorkDetail[0]}/>
 			<hr />
 			<LinkSection  WorkDetail={WorkDetail[0]}/>

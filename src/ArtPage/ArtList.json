@@ -1,6 +1,6 @@
 {
 	"Info":{
-		"quantity":5
+		"quantity":6
 	},
 	"database" : [
 		{
@@ -37,6 +37,13 @@
 			"title":"Snakes",
 			"published": "July 17, 2019",
 			"description":"All characters are from Metal Gear Solid series (c) Kojima and Konami"
+		},
+		{
+			"id":5,
+			"fileName":"Dragon",
+			"title":"Dragon",
+			"published": "Aug 10, 2019",
+			"description":"my original work"
 		}
 	]
 }
