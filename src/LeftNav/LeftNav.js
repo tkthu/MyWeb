@@ -36,9 +36,9 @@ class LeftNav extends React.Component {
 					<img className="Avatar" src ={ImgComp["myAvatar"]} />
 
 					<ul className="TextNav">
-						<NavButton text="HOME" toPage="home" onClickHandler={this.props.onClickHandler} />
-						<NavButton text="ABOUT ME" toPage="aboutMe" onClickHandler={this.props.onClickHandler}/>
-						<NavButtonToggle text="WORK" onClickHandler={this.props.onClickHandler}/>
+						<NavButton text="HOME" toPage=""  />
+						<NavButton text="ABOUT ME" toPage="aboutMe" />
+						<NavButtonToggle text="WORK" />
 					</ul>
 
 					<div className="spacer" />

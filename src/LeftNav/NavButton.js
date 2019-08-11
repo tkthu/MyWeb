@@ -1,15 +1,13 @@
 import React from 'react'
 
 const NavButton = props => (	
-	<li className="NavButton"
-	onClick={()=>{
-			const target ={toPage:props.toPage};
-			const e = {target};
-			props.onClickHandler(e)						
-		}
-	}>
-		{props.text}
-	</li>
+	<a className="NavButton" 
+	href={`/${props.toPage}`} > 
+		<li >
+			{props.text}
+		</li>
+	</a>		
+	
 );
 
 export default NavButton;

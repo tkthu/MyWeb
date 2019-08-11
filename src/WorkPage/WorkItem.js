@@ -1,19 +1,17 @@
 import React from 'react';
 
+import { Link } from "react-router-dom";
+
 import ImgWorkComp from "../images/work/ImgWorkComp.js";
 
 const WorkItem = props => {
 	return(	
-		<div className="WorkItem" onClick={()=>{
-				const target ={toPage:props.toPage,showWork:props.WorkDetail.id};
-				const e = {target};
-				props.onClickHandler(e)						
-			}
-		}>
-			<img src={ImgWorkComp[props.WorkDetail.thumbnail]} />
-			<div className="Overlay" />
-			<div className="OverlayName">{props.WorkDetail.title}</div>
-			
+		<div className="WorkItem" >
+			<Link to={`${props.url}/${props.WorkDetail.id}`} >
+				<img src={ImgWorkComp[props.WorkDetail.thumbnail]} />
+				<div className="Overlay" />
+				<div className="OverlayName">{props.WorkDetail.title}</div>
+			</Link>	
 		</div>
 	);
 }

@@ -13,7 +13,7 @@
 }
 
 /* Create four equal columns that sits next to each other */
-.ArtPage .column {
+/*.ArtPage .column {
   width:100%;
   flex: 25%;
   flex-wrap: wrap;
@@ -32,19 +32,22 @@
   cursor: pointer;
 
 }
-.ArtPage .ArtItem:hover .Overlay{
+.ArtPage .column > .ArtItem:hover .Overlay{
   height: 100%;
 }
-.ArtPage .ArtItem:hover .OverlayName{
+.ArtPage .column > .ArtItem:hover .OverlayName{
   opacity: 1;
 }
 
-.ArtPage .Overlay{
+.ArtPage .column .Overlay{
   box-sizing: border-box;
+  position: absolute;
+
   width:100%;
   height: 0%;
+
   min-width: 250px;
-  position: absolute;
+  
   bottom: 0;
   margin:2px;
   
@@ -52,17 +55,19 @@
   transition: height 0.5s ease-out;
 }
 
-.ArtPage .OverlayName{
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    margin:4px;
-    color: white;
+.ArtPage .column .OverlayName{
+  box-sizing: border-box;
+  position: absolute;
 
-    opacity: 0;
-    transition: 0.5s ease-out;
+  bottom: 0;  
+  margin:4px;
+
+  color: white;
+
+  opacity: 0;
+  transition: 0.5s ease-out;
 }
-
+*/
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
   .ArtPage .column {

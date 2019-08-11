@@ -1,18 +1,16 @@
 import React from 'react';
 
+import { Link } from "react-router-dom";
+
 import ImgComp from "../images/ImgComp.js";
 
 const WorkIcon = props => (	
-	<button className="WorkIcon"
+	<Link className="WorkIcon"
 		style={{margin:"20px"}} 
-		onClick={()=>{
-			const target ={toPage:props.toPage};
-			const e = {target};
-			props.onClickHandler(e)						
-		}
-	}>
+		to={`/${props.toPage}`}
+	>
 		<img src={ImgComp[props.imgSrc]} />
-	</button>	
+	</Link>	
 );
 
 export default WorkIcon;

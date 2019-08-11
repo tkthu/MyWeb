@@ -10,8 +10,8 @@ const HomePage = props => (
 		<h1>MY PROUDEST WORK</h1>
 		<img className="fancyHorLine" src={ImgComp["fancyHorLine"]} />
 		<div className="WorkItem">
-	    	<WorkIcon imgSrc="artIcon" toPage="art" onClickHandler={props.onClickHandler} />
-	    	<WorkIcon imgSrc="codingIcon" toPage="code" onClickHandler={props.onClickHandler} />    
+	    	<WorkIcon imgSrc="artIcon" toPage="drawing" onClickHandler={props.onClickHandler} />
+	    	<WorkIcon imgSrc="codingIcon" toPage="project" onClickHandler={props.onClickHandler} />    
 	    </div>
 	</div>
 );

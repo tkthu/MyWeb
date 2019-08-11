@@ -2,39 +2,22 @@ import React from 'react';
 import WorkItem from './WorkItem.js';
 import WorkList from './WorkList.json';
 
+import DefaultWorkPage from "./DefaultWorkPage.js"
+import DetailWorkPage from "../DetailWorkPage/DetailWorkPage.js"
+
 import ImgComp from "../images/ImgComp.js";
+
+import { Route } from "react-router-dom";
 
 import './WorkPage.css';
 
-
-const WorkPage = props => (	
-	<div className="PanelContent WorkPage">
-		<h1>MY PROUDEST PROJECT</h1>
-		<img className="LineBreak" src={ImgComp["fancyHorLine"]} />	
-		<div className="row"> 
-			<div className="column">
-			{
-				WorkList.database.filter((WorkDetail)=>WorkDetail.id%3===0).map((WorkDetail)=>{
-					return <WorkItem key={WorkDetail.id} WorkDetail={WorkDetail} onClickHandler={props.onClickHandler} toPage="detailWork"/>
-				})
-			}
-			</div>
-			<div className="column">
-			{
-				WorkList.database.filter((WorkDetail)=>WorkDetail.id%3===1).map((WorkDetail)=>{
-					return <WorkItem key={WorkDetail.id} WorkDetail={WorkDetail} onClickHandler={props.onClickHandler} toPage="detailWork"/>
-				})
-			}
-			</div>
-			<div className="column">
-			{
-				WorkList.database.filter((WorkDetail)=>WorkDetail.id%3===2).map((WorkDetail)=>{
-					return <WorkItem key={WorkDetail.id} WorkDetail={WorkDetail} onClickHandler={props.onClickHandler} toPage="detailWork"/>
-				})
-			}
-			</div>
-		</div>		
-	</div>
-);
+const WorkPage = ({ match }) => {
+	return (
+		<div className="PanelContent WorkPage">			
+			<Route exact path={`${match.path}`} component={DefaultWorkPage} />
+			<Route path={`${match.path}/:id`} component={DetailWorkPage}/>
+		</div>
+	)
+}
 
 export default WorkPage;
