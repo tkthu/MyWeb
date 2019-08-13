@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavButton = props => (	
 	<a className="NavButton" 
-	href={`${props.toPage}`} > 
+	href={`/${props.toPage}`} > 
 		<li >
 			{props.text}
 		</li>
