@@ -15,7 +15,7 @@ class Panel extends React.Component {
 	render(){
 		return (
 			<div className="Panel" >
-				<Router>
+				<Router basename={process.env.PUBLIC_URL}>
 			        <Route exact path="/" component={HomePage} />
 			        <Route path="/aboutMe" component={AboutMePage} />
 			        <Route path="/drawing" component={ArtPage} />
