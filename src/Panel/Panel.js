@@ -6,6 +6,8 @@ import ArtPage from '../ArtPage/ArtPage.js';
 import DetailArtPage from '../DetailArtPage/DetailArtPage.js';
 import AboutMePage from '../AboutMePage/AboutMePage.js';
 
+import LeftNav from '../LeftNav/LeftNav.js';
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
@@ -16,6 +18,7 @@ class Panel extends React.Component {
 		return (
 			<div className="Panel" >
 				<Router basename="/MyWeb">
+					<LeftNav />
 			        <Route exact path="/" component={HomePage} />
 			        <Route path="/aboutMe" component={AboutMePage} />
 			        <Route path="/drawing" component={ArtPage} />
