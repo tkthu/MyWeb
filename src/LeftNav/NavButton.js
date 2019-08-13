@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const NavButton = props => (	
-	<a className="NavButton" 
-	href={`/${props.toPage}`} > 
+import { Link } from "react-router-dom";
+
+const NavButton = props => (
+	<Link className="NavButton"  to={`/${props.toPage}`} >
 		<li >
 			{props.text}
 		</li>
-	</a>		
-	
+	</Link>		
 );
 
 export default NavButton;
