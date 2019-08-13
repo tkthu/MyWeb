@@ -16,10 +16,10 @@ class Panel extends React.Component {
 		return (
 			<div className="Panel" >
 				<Router>
-			        <Route exact path="MyWeb/" component={HomePage} />
-			        <Route path="MyWeb/aboutMe" component={AboutMePage} />
-			        <Route path="MyWeb/drawing" component={ArtPage} />
-			        <Route path="MyWeb/project" component={WorkPage} />			        
+			        <Route exact path="/MyWeb/" component={HomePage} />
+			        <Route path="/MyWeb/aboutMe" component={AboutMePage} />
+			        <Route path="/MyWeb/drawing" component={ArtPage} />
+			        <Route path="/MyWeb/project" component={WorkPage} />			        
 			    </Router>			
 			</div>
 		)
