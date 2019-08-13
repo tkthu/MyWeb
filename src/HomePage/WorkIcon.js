@@ -7,7 +7,7 @@ import ImgComp from "../images/ImgComp.js";
 const WorkIcon = props => (	
 	<Link className="WorkIcon"
 		style={{margin:"20px"}} 
-		to={`MyWeb/${props.toPage}`}
+		to={`/${props.toPage}`}
 	>
 		<img src={ImgComp[props.imgSrc]} />
 	</Link>	
