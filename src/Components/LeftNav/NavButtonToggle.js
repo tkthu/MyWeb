@@ -11,7 +11,7 @@ const NavButtonToggle = props => (
 			<img src={ImgComp["arrowIcon"]} />
 		</li>
 		<ul className="ToggleItem">				
-			<NavButton text="Drawing" toPage="drawing" onClickHandler={props.onClickHandler} />
+			<NavButton text="Digital art" toPage="digitalArt" onClickHandler={props.onClickHandler} />
 			<NavButton text="Project" toPage="project" onClickHandler={props.onClickHandler}/>
 		</ul>
 

@@ -1,16 +1,13 @@
+import WorkList from '../../Database/WorkList.json';
+/*-------------------------------------------------*/
 import React from 'react';
-import WorkList from '../WorkPage/WorkList.json';
-import InfoSection from './InfoSection.js';
-
-import LinkSection from './LinkSection.js';
-
-import ImgComp from "../images/ImgComp.js";
-import ImgWorkComp from "../images/work/ImgWorkComp.js";
-
+import "../../../node_modules/video-react/dist/video-react.css";
+import ImgComp from "../../Components/images/ImgComp.js";
+import ImgWorkComp from "../../Components/images/work/ImgWorkComp.js";
+import Slider from '../../Components/Slider/Slider.js';
+import InfoSection from '../../Components/InfoSection.js';
+import LinkSection from '../../Components/LinkSection.js';
 import { Player } from 'video-react';
-import "../../node_modules/video-react/dist/video-react.css";
-
-import Slider from '../Slider/Slider.js';
 
 import './DetailWorkPage.css';
 
@@ -25,7 +22,7 @@ const DetailWorkPage = ({match}) => {
 				src={ImgWorkComp[WorkDetail[0].fileName]}
 			/>
 			<img className="LineBreak" src={ImgComp["fancyHorLine"]} />	
-			<InfoSection WorkDetail={WorkDetail[0]}/>
+			<InfoSection InfoDetail={WorkDetail[0]}/>
 			<hr />
 			<LinkSection  WorkDetail={WorkDetail[0]}/>
 			

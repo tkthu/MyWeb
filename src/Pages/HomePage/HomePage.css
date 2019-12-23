@@ -1,0 +1,9 @@
+.WorkItem{
+	text-align: left;
+}
+.WorkIcon img{
+	width: 30%;
+}
+.WorkIcon:hover img{
+	width: 35%;
+}

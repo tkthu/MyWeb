@@ -1,52 +1,28 @@
-/*.ArtPage{
-  width:100%;
-}*/
-
-.ArtPage .LineBreak{
-  height: 5%;
-  width: 100% ;
-}
-.ArtPage .row {
-  width:100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* Create four equal columns that sits next to each other */
-.ArtPage .column {
-  width:100%;
+#ArtPage .column {
   flex: 25%;
-  flex-wrap: wrap;
-  box-sizing: border-box;
   margin:2px;
 }
-
-.ArtPage .column img {
+#ArtPage .column img {
   width:100%;
-  min-width: 250px;
-  box-sizing: border-box;
+  min-width: 300px;
   margin:2px;
 }
-.ArtPage .ArtItem{
+#ArtPage .Thumbnail{
   position: relative;
-  cursor: pointer;
-
 }
-.ArtPage .column > .ArtItem:hover .Overlay{
+#ArtPage .column > .Thumbnail:hover .Overlay{
   height: 100%;
 }
-.ArtPage .column > .ArtItem:hover .OverlayName{
+#ArtPage .column > .Thumbnail:hover .OverlayName{
   opacity: 1;
 }
 
-.ArtPage .column .Overlay{
-  box-sizing: border-box;
+#ArtPage .column .Overlay{
   position: absolute;
 
   width:100%;
   height: 0%;
-
-  min-width: 250px;
   
   bottom: 0;
   margin:2px;
@@ -55,8 +31,7 @@
   transition: height 0.5s ease-out;
 }
 
-.ArtPage .column .OverlayName{
-  box-sizing: border-box;
+#ArtPage .column .OverlayName{
   position: absolute;
 
   bottom: 0;  
@@ -66,11 +41,13 @@
 
   opacity: 0;
   transition: 0.5s ease-out;
+
+  font-size: 150%;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
-  .ArtPage .column {
+  #ArtPage .column {
     flex: 100%;
     max-width: 100%;
   }

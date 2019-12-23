@@ -1,15 +1,11 @@
+import ArtList from '../../Database/ArtList.json';
+import WorkList from '../../Database/WorkList.json';
+/*----------------------------------------*/
 import React from 'react';
-import ArtList from '../ArtPage/ArtList.json';
-import ArtItem from '../ArtPage/ArtItem.js';
 
-import WorkList from '../WorkPage/WorkList.json';
-import WorkItem from '../WorkPage/WorkItem.js';
-
-import ToggleSlider from "./ToggleSlider.js";
-
+import Thumbnail from '../Thumbnail.js';
 import ImgComp from "../images/ImgComp.js";
-
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import ToggleSlider from "./ToggleSlider.js";
 
 import "./Slider.css"
 
@@ -50,33 +46,21 @@ class Slider extends React.Component {
 			SliderClassNames="Slider Open"
 		}
 
-		let currentShowThumbnails =(
-			<div className="Picture">
-				{ArtList.database.filter((ArtDetail,id)=>this.state.currentShows[0] === id ).map((ArtDetail,id)=>
-					<ArtItem key={id} ArtDetail={ArtDetail} url={this.props.url}/>
-				)}
-				{ArtList.database.filter((ArtDetail,id)=>this.state.currentShows[1] === id ).map((ArtDetail,id)=>
-					<ArtItem key={id} ArtDetail={ArtDetail} url={this.props.url}/>
-				)}	
-				{ArtList.database.filter((ArtDetail,id)=>this.state.currentShows[2] === id ).map((ArtDetail,id)=>
-					<div className="del ArtItem" key={id}><ArtItem  ArtDetail={ArtDetail} url={this.props.url}/></div>
-				)}
-			</div>
-		)
-
-		if(this.props.currentPage === "DetailWorkPage"){
-			currentShowThumbnails =(
-				<div className="Picture">
-					{WorkList.database.filter((WorkDetail,id)=>this.state.currentShows[0] === id ).map((WorkDetail,id)=>
-						<WorkItem key={id} WorkDetail={WorkDetail} url={this.props.url}/>
-					)}	
-					{WorkList.database.filter((WorkDetail,id)=>this.state.currentShows[1] === id ).map((WorkDetail,id)=>
-						<WorkItem key={id} WorkDetail={WorkDetail} url={this.props.url}/>
-					)}
-				</div>
-			)
+		var items = [];
+		for (var i = 0; i < 3; i++) {
+			if(this.props.currentPage === "DetailArtPage")
+				items.push(
+			    	ArtList.database.filter((ArtDetail,id)=>this.state.currentShows[i] === id ).map((ArtDetail,id)=>
+						<div className="Item" id={i} key={id} ><Thumbnail InfoDetail={ArtDetail} url={this.props.url}/></div>
+					)
+		    	);
+			else if(this.props.currentPage === "DetailWorkPage")
+				items.push(
+			    	WorkList.database.filter((WorkDetail,id)=>this.state.currentShows[i] === id ).map((WorkDetail,id)=>
+						<div className="Item" id={i} key={id} ><Thumbnail InfoDetail={WorkDetail} url={this.props.url}/></div>
+					)
+		    	);		    
 		}
-
 		return(
 			<div>
 				<ToggleSlider className={ToggleClassNames} onClickHandler={this.changeShowHandler}  />
@@ -88,7 +72,9 @@ class Slider extends React.Component {
 						}
 					} />
 
-					{currentShowThumbnails}
+					<div className="Picture">
+						{items}
+					</div>
 
 					<img id="RightArrow" className="Arrow" src={ImgComp["arrowIcon"]} onClick={()=>{
 							const target ={number:1};
@@ -104,4 +90,4 @@ class Slider extends React.Component {
 	}
 }
 
-export default Slider;			
+export default Slider;

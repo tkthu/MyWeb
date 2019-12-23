@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
 
-import Level from '../Level/Level.js';
-
-import ImgComp from "../images/ImgComp.js";
+import Level from '../../Components/Level/Level.js';
+import ImgComp from "../../Components/images/ImgComp.js";
 
 import './AboutMePage.css';
 

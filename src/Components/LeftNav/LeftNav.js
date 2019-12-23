@@ -46,7 +46,7 @@ class LeftNav extends React.Component {
 				    <div className="Contact">
 					    <hr style={{ backgroundColor: "white",height: 1 }} />
 					    <ul>
-							<li>Phone: (+84) 0939853195</li>
+							<li>Phone: (+84) 939853195</li>
 							<li>Gmail: thai.k.thu2000@gmail.com</li>
 						</ul>
 					    <hr style={{ backgroundColor: "white",height: 1 }} />

@@ -1,24 +1,52 @@
 html{
-  width:100%;
-  height: 100%;
   font-size: 20px;
-}
-body{
-  width:100%;
-  height: 100%; 
   background-color: #916341;
-  overflow-x: hidden;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
-#root{
+
+/****************/
+.Panel{
+  background: #92929a;
+  z-index: 100;/*!!!!!!!!!!!*/
+
+  border: 10px double #1e2130;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+
+  font-family: Georgia, serif;
+  color: #1e2130;
+
   position: absolute;
-  width:100%;
-  height: 100%;
+  top:0px;
+  right: 0px;
+}
+.Panel a{
+  word-break: break-all;
+}
+.Panel h1{
+  text-align: right;
+  font-size: 300%;
 }
 
-p{
-  font-family: Arial, Helvetica, sans-serif;
+@media  screen and (max-width: 1300px){/*1500px*/
+  .Panel{
+    width: 90%;
+    margin:40px ;
+  }
+  .Panel .PanelContent{
+    box-sizing: border-box; 
+    margin:50px;
+  }
 }
+@media  screen and (min-width: 1299px){/*1499px*/
+  .Panel{
+    width: 76%;
+    margin:45px ;
+  }
+  .Panel .PanelContent{
+    box-sizing: border-box; 
+    margin:100px;
+  }
+}
+.Panel .PanelContent.AboutMePage{
+  margin:0px;
+}
+

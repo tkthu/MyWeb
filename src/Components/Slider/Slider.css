@@ -70,9 +70,7 @@
   margin: 0 auto;
 }
 @media  screen and (max-width: 800px){/*1500px*/
-  .Slider .Picture .del{
-    display: none;
-  }
+  [id="2"] {display: none;}
 }
 
 .Slider .Picture img{
@@ -82,8 +80,7 @@
 }
 
 /*???????????????*/
-
-.Slider .Picture .ArtItem{
+.Slider .Picture .Item{
   position: relative;
   cursor: pointer;
   margin: 1%;
@@ -92,25 +89,10 @@
 
 }
 
-.Slider .Picture .ArtItem:hover .Overlay{
+.Slider .Picture .Item:hover .Overlay{
   height: 100%;
 }
-.Slider .Picture .ArtItem:hover .OverlayName{
-  opacity: 1;
-}
-
-.Slider .Picture .WorkItem{
-  position: relative;
-  cursor: pointer;
-  margin: 1%;
-  width:100%;
-  height: 100%;
-}
-
-.Slider .Picture .WorkItem:hover .Overlay{
-  height: 100%;
-}
-.Slider .Picture .WorkItem:hover .OverlayName{
+.Slider .Picture .Item:hover .OverlayName{
   opacity: 1;
 }
 
