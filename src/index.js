@@ -8,6 +8,7 @@ import DetailWorkPage from './Pages/DetailWorkPage/DetailWorkPage.js';
 import ArtPage from './Pages/ArtPage/ArtPage.js';
 import DetailArtPage from './Pages/DetailArtPage/DetailArtPage.js';
 import AboutMePage from './Pages/AboutMePage/AboutMePage.js';
+import ErrorPage from './Pages/ErrorPage.js';
 
 import LeftNav from './Components/LeftNav/LeftNav.js';
 
@@ -24,6 +25,7 @@ class Web extends React.Component {
 				        <Route path="/aboutMe" component={AboutMePage} />
 				        <Route path="/digitalArt" component={ArtPage} />
 				        <Route path="/project" component={WorkPage} />
+				        <Route component={ErrorPage} />
 				        <Redirect from='*' to='/' />		        
 			        </Switch>
 				</div>
