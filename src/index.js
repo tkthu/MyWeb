@@ -25,7 +25,6 @@ class Web extends React.Component {
 				        <Route path="/aboutMe" component={AboutMePage} />
 				        <Route path="/digitalArt" component={ArtPage} />
 				        <Route path="/project" component={WorkPage} />
-				        <Route component={ErrorPage} />
 				        <Redirect from='*' to='/' />		        
 			        </Switch>
 				</div>
