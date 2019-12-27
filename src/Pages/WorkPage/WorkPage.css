@@ -1,9 +1,3 @@
-#WorkPage .row {
-  width:100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 /* Create four equal columns that sits next to each other */
 #WorkPage .column {
   flex: 25%;

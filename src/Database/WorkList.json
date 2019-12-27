@@ -1,6 +1,6 @@
 {
 	"Info":{
-		"quantity":2
+		"quantity":3
 	},
 	"database" : [
 		{
@@ -23,12 +23,26 @@
 			"fileName":"OutOfHell",
 			"title":"Out Of Hell",
 			"published": "September 3, 2018",
-			"description":"This was written in Flash.\nbackground soundtrack: Demonization by XTaKeRuX\n\nCharacter is from Devil may cry series (c) Capcom",
+			"description":"This was written in Flash.\nBackground soundtrack: Demonization by XTaKeRuX\n\nCharacter is from Devil may cry series (c) Capcom",
 			"link":
 			{
 				"id":0,
 				"title":"link to the game:",
 				"url":"https://www.deviantart.com/thu2000/art/Out-Of-Hell-ft-Dante-from-the-Devil-may-cry-series-762383959"
+			}
+		},
+		{
+			"id":2,
+			"thumbnail":"RectangleThumbnail",
+			"fileName":"Rectangle",
+			"title":"Rectangle",
+			"published": "December 27, 2019",
+			"description":"This was written in Java.\nThis was made to test some mechanic in a game, which I'd been working on with my friends. But since that game was canceled, I figured I should put it up here.\nA,S,D,W to move.\nRight mouse to shoot bullets.\nLeft mouse to shoot web?\n",
+			"link":
+			{
+				"id":0,
+				"title":"link to download game:",
+				"url":"https://drive.google.com/file/d/1ogF-epo_-S1X1dVqjtrot4azQh4TfrUJ/view?usp=sharing"
 			}
 			
 		}
